@@ -1,19 +1,108 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><title>Clean Data API</title>
-<style>body{font-family:Arial;background:#0a0a1a;color:#e0e0e0;padding:40px;text-align:center}
-h1{color:#00ff88;font-size:2.5em}.btn{background:#00ff88;color:#000;padding:15px 40px;border-radius:30px;text-decoration:none;font-weight:bold;font-size:1.2em}
-.plans{display:flex;justify-content:center;gap:20px;margin:40px 0;flex-wrap:wrap}
-.plan{background:#16163a;padding:30px;border-radius:15px;width:220px}
-.plan h3{color:#00ff88}.price{font-size:2em;color:#ff0}code{color:#00ff88;background:#0d0d2b;padding:5px 10px;border-radius:5px;font-size:.8em}</style></head>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>💼 Clean Data API - SAAS</title>
+<meta name="description" content="AI-filtered clean web data for AI training. Subscribe via LTC.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial;background:#0a0a1a;color:#e0e0e0;line-height:1.6}
+.hero{background:linear-gradient(135deg,#1a1a3e,#0d0d2b);padding:60px 20px;text-align:center}
+.hero h1{color:#00ff88;font-size:2.5em;margin-bottom:10px}
+.hero p{color:#aaa;font-size:1.2em}
+.pricing{max-width:1000px;margin:40px auto;padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.plan{background:#16163a;border-radius:12px;padding:30px;text-align:center;border:2px solid #2a2a5e;transition:.3s}
+.plan:hover{border-color:#00ff88;transform:translateY(-5px)}
+.plan h3{color:#00ff88;font-size:1.5em}
+.plan .price{font-size:2em;color:#ff0;margin:15px 0}
+.plan .price span{font-size:.5em;color:#aaa}
+.plan ul{list-style:none;margin:20px 0;color:#aaa}
+.plan ul li{margin:8px 0}
+.plan .btn{display:inline-block;background:#00ff88;color:#000;padding:12px 30px;border-radius:25px;text-decoration:none;font-weight:bold;margin-top:15px}
+.plan.featured{border-color:#ff0;background:#1a1a4e}
+.stats{display:flex;justify-content:center;gap:40px;padding:30px;background:#111133;flex-wrap:wrap}
+.stat{text-align:center}
+.stat-val{font-size:2em;color:#00ff88;font-weight:bold}
+.stat-lbl{color:#aaa}
+.api{max-width:800px;margin:40px auto;padding:20px;background:#16163a;border-radius:12px}
+.api code{display:block;background:#0d0d2b;padding:15px;border-radius:8px;color:#00ff88;margin:10px 0;font-size:.9em}
+.footer{text-align:center;padding:30px;color:#666}
+</style></head>
 <body>
+<div class="hero">
 <h1>💼 Clean Data API</h1>
-<p style="font-size:1.2em;color:#aaa">AI-filtered human content for training datasets</p>
-<div class="plans">
-<div class="plan"><h3>🆓 Free</h3><div class="price">0 LTC</div><p>5 req/day</p></div>
-<div class="plan"><h3>📦 Basic</h3><div class="price">0.001 LTC</div><p>100 req/day</p></div>
-<div class="plan"><h3>🚀 Pro</h3><div class="price">0.005 LTC</div><p>1000 req/day</p></div>
-<div class="plan"><h3>🏢 Unlimited</h3><div class="price">0.01 LTC</div><p>∞ req/day</p></div>
+<p>AI-filtered, human-written content for training datasets</p>
+<p style="color:#00ff88;margin-top:10px;">🔒 No AI spam • No duplicates • JSONL ready</p>
 </div>
-<p style="color:#aaa">Send LTC to: <code>MSdQoKr25ipMeGMUMJjoL26ErZ1qwmuioh</code></p>
-<a href="#" class="btn">🚀 Get Started</a>
+
+<div class="stats">
+<div class="stat"><div class="stat-val">58</div><div class="stat-lbl">Clean Articles</div></div>
+<div class="stat"><div class="stat-val">0</div><div class="stat-lbl">Active Subscribers</div></div>
+<div class="stat"><div class="stat-val">99.9%</div><div class="stat-lbl">AI-Free Rate</div></div>
+</div>
+
+<h2 style="text-align:center;color:#fff;margin-top:40px;">📋 Subscription Plans</h2>
+
+<div class="pricing">
+<div class="plan">
+<h3>🆓 Free</h3>
+<div class="price">0 LTC<span>/month</span></div>
+<ul>
+<li>✅ 5 requests/day</li>
+<li>✅ JSONL format</li>
+<li>✅ All categories</li>
+<li>❌ Priority access</li>
+</ul>
+<a href="#" class="btn">Get Started</a>
+</div>
+
+<div class="plan">
+<h3>📦 Basic</h3>
+<div class="price">0.001 LTC<span>/month</span></div>
+<ul>
+<li>✅ 100 requests/day</li>
+<li>✅ JSONL format</li>
+<li>✅ All categories</li>
+<li>✅ Email support</li>
+</ul>
+<a href="#" class="btn">Subscribe</a>
+<p style="color:#aaa;font-size:.8em;margin-top:5px;">Send 0.001 LTC to:<br><code style="color:#0f0;font-size:.7em;">MSdQoKr25ipMeGMUMJjoL26ErZ1qwmuioh</code></p>
+</div>
+
+<div class="plan featured">
+<h3>🚀 Pro</h3>
+<div class="price">0.005 LTC<span>/month</span></div>
+<ul>
+<li>✅ 1,000 requests/day</li>
+<li>✅ JSONL + JSON formats</li>
+<li>✅ Sentiment analysis</li>
+<li>✅ Priority support</li>
+</ul>
+<a href="#" class="btn">Subscribe</a>
+<p style="color:#aaa;font-size:.8em;margin-top:5px;">Send 0.005 LTC to:<br><code style="color:#0f0;font-size:.7em;">MSdQoKr25ipMeGMUMJjoL26ErZ1qwmuioh</code></p>
+</div>
+
+<div class="plan">
+<h3>🏢 Unlimited</h3>
+<div class="price">0.01 LTC<span>/month</span></div>
+<ul>
+<li>✅ Unlimited requests</li>
+<li>✅ All formats</li>
+<li>✅ Custom categories</li>
+<li>✅ 24/7 support</li>
+</ul>
+<a href="#" class="btn">Subscribe</a>
+<p style="color:#aaa;font-size:.8em;margin-top:5px;">Send 0.01 LTC to:<br><code style="color:#0f0;font-size:.7em;">MSdQoKr25ipMeGMUMJjoL26ErZ1qwmuioh</code></p>
+</div>
+</div>
+
+<div class="api">
+<h3 style="color:#00ff88;">🔌 API Endpoint</h3>
+<p style="color:#aaa;">Get clean data in JSONL format:</p>
+<code>GET https://kiko555-star.github.io/clean-data-api/api/v1/data?limit=10</code>
+<p style="color:#aaa;margin-top:10px;">Free tier: 5 requests/day. Paid: up to unlimited.</p>
+</div>
+
+<div class="footer">
+<p>💼 Clean Data API © 2026 | Powered by Anti-AI Filtering Technology</p>
+<p>Payment via Litecoin (LTC) | Instant activation</p>
+</div>
 </body></html>
